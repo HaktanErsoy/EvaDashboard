@@ -15,6 +15,7 @@ The empty version of the project is giving errors related to my system OS and ar
 
 M1 Related Error
 
+## Usage
 To start the project run (you might need to use -f tag for install):
 
 ```sh
@@ -22,8 +23,6 @@ To start the project run (you might need to use -f tag for install):
 npm i (-f)
 npm run serve
 ```
-
-## Usage
 
 - Check localStorage to see token and userInfo
 - Highchart components are in the HighCharts page that can be navigated using menu
