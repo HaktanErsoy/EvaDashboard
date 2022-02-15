@@ -329,7 +329,6 @@ export default {
       jwt
         .login(payload.userDetails.email, payload.userDetails.password)
         .then((response) => {
-          console.log(response.data.Data);
           // If there's user data in response
           if (response.data.Data.token) {
             // Navigate User to homepage

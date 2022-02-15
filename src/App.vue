@@ -76,6 +76,13 @@ export default {
     // jwt
     jwt.init();
 
+    if (this.$store.getters["auth/isUserLoggedIn"]) {
+      this.$store.commit(
+        "auth/SET_BEARER",
+        JSON.parse(localStorage.getItem("token"))
+      );
+    }
+
     const dir = this.$vs.rtl ? "rtl" : "ltr";
     document.documentElement.setAttribute("dir", dir);
 

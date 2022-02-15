@@ -1,6 +1,5 @@
 <template>
   <section>
-    <p>{{ userToken || "yo" }}</p>
     <div class="multi-chart-container">
       <MultiChart />
     </div>

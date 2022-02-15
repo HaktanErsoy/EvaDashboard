@@ -110,13 +110,6 @@ export default {
     await this.fetchSelectOptions();
     await this.fetchPieChartData();
     this.$root.$on("update-pie-chart", (event) => {
-      console.log({
-        text: new Date(event).toLocaleDateString("default", {
-          month: "long",
-        }),
-        value: event,
-      });
-      console.log(this.selectDateOptions[0]);
       this.requestDate = {
         text: new Date(event).toLocaleDateString("default", {
           month: "long",

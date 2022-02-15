@@ -11,8 +11,6 @@ import axios from "@/http/axios/index.js";
 
 export default {
   SET_BEARER(state, accessToken) {
-    console.log("set bearer");
-    console.log(accessToken);
     axios.defaults.headers.common = { Authorization: `Bearer ${accessToken}` };
   },
 };
