@@ -18,7 +18,7 @@
       <div class="price-list">
         <div class="total-expense">
           <p>Total Expenses</p>
-          <p>{{ `$${totalExpense}` }}</p>
+          <p>{{ `$${totalExpense.toFixed(2)}` }}</p>
         </div>
         <ul class="pie-chart-item-list">
           <li
